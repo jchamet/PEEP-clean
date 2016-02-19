@@ -10,17 +10,16 @@ defmodule Backend.Router do
   end
 
   pipeline :api do
-    plug :accepts, ["json"]
+    plug :accepts, ["json-api"]
   end
 
-  scope "/", Backend do
-    pipe_through :browser # Use the default browser stack
-
-    get "/", PageController, :index
-  end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", Backend do
-  #   pipe_through :api
+  # scope "/", Backend do
+  #   pipe_through :browser # Use the default browser stack
+  #   get "/", PageController, :index
   # end
+
+  scope "/", Backend do     # change to /api
+    pipe_through :api
+    resources "/posts", PostController
+  end
 end
