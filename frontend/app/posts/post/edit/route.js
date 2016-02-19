@@ -1,15 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
-    return this.store.find('post', params.post_id);
-  },
   actions: {
-    delete: function() {
+    save: function() {
       var post = this.currentModel;
-      post.deleteRecord();
       post.save().then(() => {
-        this.transitionTo('posts');
+        this.transitionTo('posts.post', post.id);
       });
     }
   }
