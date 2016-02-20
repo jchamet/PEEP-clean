@@ -8,7 +8,9 @@ mix archive.install https://github.com/phoenixframework/archives/raw/master/phoe
 ```
 
 ## Setup
-Follow this guide
+Follow this guide or clone this repo
 http://maxwellholder.com/blog/build-a-blog-with-phoenix-and-ember
 
-
+## Deployment
+Follow this guide for Phoenix
+http://wsmoak.net/2015/07/12/phoenix-and-ecto-from-mix-new-to-heroku.html
