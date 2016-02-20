@@ -8,9 +8,9 @@ mix archive.install https://github.com/phoenixframework/archives/raw/master/phoe
 ```
 
 ## Setup
-Follow this guide or clone this repo
+Follow (some of) this guide or clone me
 http://maxwellholder.com/blog/build-a-blog-with-phoenix-and-ember
 
 ## Deployment
-Follow this guide for Phoenix
-http://wsmoak.net/2015/07/12/phoenix-and-ecto-from-mix-new-to-heroku.html
+Phoenix: http://www.phoenixframework.org/docs/heroku
+Ember: honestly, just use ember build and stick the dist in an s3 bucket
